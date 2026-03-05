@@ -1,42 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skyline</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="../libs/p5.min.js"></script>
     <script src="main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="wrapper">
-        <div id="canvas-container">
+      <div id="canvas-container"></div>
+      <div id="dom-container">
+        <div id="header">
+          <h1>Skyline</h1>
+          <div class="subtitle">forEach & map</div>
         </div>
-        <div id="dom-container">
-            <div id="header">
-                <h1>Skyline</h1>
-                <div class="subtitle">forEach & map</div>
-            </div>
 
-            <div class="controls">
-                <p class="description">Visualize an array of numbers as a city skyline. Use map() to transform the data.
-                </p>
+        <div class="controls">
+          <p class="description">
+            Visualize an array of numbers as a city skyline. Use map() to
+            transform the data.
+          </p>
 
-                <div class="button-group">
-                    <button id="btn-grow">Grow (height + 10%)</button>
-                    <button id="btn-shrink">Shrink (height - 10%)</button>
-                    <button id="btn-reset">Reset Data</button>
-                </div>
+          <div class="button-group">
+            <button id="btn-grow">Grow (height + 10%)</button>
+            <button id="btn-shrink">Shrink (height - 10%)</button>
+            <button id="btn-reset">Reset Data</button>
+          </div>
 
-                <div id="data-display">
-                    <h3>Current Data:</h3>
-                    <div id="data-output"></div>
-                </div>
-            </div>
+          <div id="data-display">
+            <h3>Current Data:</h3>
+            <div id="data-output"></div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
